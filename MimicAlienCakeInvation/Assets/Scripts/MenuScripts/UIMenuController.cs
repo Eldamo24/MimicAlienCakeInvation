@@ -37,4 +37,9 @@ public class UIMenuController : MonoBehaviour
         mainMenu.SetActive(true);
         elevatorAnimMenu.SetActive(false);
     }
+
+    public void OnClickExit()
+    {
+        Application.Quit();
+    }
 }

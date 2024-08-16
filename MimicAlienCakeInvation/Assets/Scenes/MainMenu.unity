@@ -230,8 +230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 663, y: -294}
-  m_SizeDelta: {x: 300, y: 150}
+  m_AnchoredPosition: {x: 666, y: -280.9566}
+  m_SizeDelta: {x: 247.83, y: 123.9133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244167214
 MonoBehaviour:
@@ -248,6 +248,7 @@ MonoBehaviour:
   imageButton: {fileID: 244167216}
   imageOn: {fileID: 21300000, guid: 127c602d3e357974da794f7c77f058f4, type: 3}
   imageOff: {fileID: 21300000, guid: 6dac0bb2586a9a94c84f6e6d7df794f3, type: 3}
+  cursorImagePointer: {fileID: 2800000, guid: b1c1726ae86d2584ca6d1a59b201fdf8, type: 3}
 --- !u!114 &244167215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 244167216}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 555318678}
+        m_TargetAssemblyTypeName: UIMenuController, Assembly-CSharp
+        m_MethodName: OnClickExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &244167216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +656,7 @@ GameObject:
   - component: {fileID: 555318674}
   - component: {fileID: 555318678}
   - component: {fileID: 555318679}
+  - component: {fileID: 555318680}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -772,6 +786,102 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &555318680
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555318673}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2eb3e7e29d5149d45bb69474af8e66b4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &649078274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,8 +1426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 663, y: -130}
-  m_SizeDelta: {x: 300, y: 150}
+  m_AnchoredPosition: {x: 665.1106, y: -117.39969}
+  m_SizeDelta: {x: 249.5988, y: 124.7994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932224348
 MonoBehaviour:
@@ -1416,6 +1526,7 @@ MonoBehaviour:
   imageButton: {fileID: 1932224349}
   imageOn: {fileID: 21300000, guid: 80a61edfa5716164abecb009a422c54c, type: 3}
   imageOff: {fileID: 21300000, guid: cbae7d98a32e1d04da5878b50a193a38, type: 3}
+  cursorImagePointer: {fileID: 2800000, guid: b1c1726ae86d2584ca6d1a59b201fdf8, type: 3}
 --- !u!114 &1932224352
 MonoBehaviour:
   m_ObjectHideFlags: 0
