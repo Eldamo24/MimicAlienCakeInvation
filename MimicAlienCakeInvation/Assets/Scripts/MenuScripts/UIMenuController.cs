@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class UIMenuController : MonoBehaviour
@@ -60,6 +59,6 @@ public class UIMenuController : MonoBehaviour
 
     private void StartGame(VideoPlayer vp)
     {
-        Application.Quit();
+        SceneManager.LoadScene("PrototypeLevel1");
     }
 }
